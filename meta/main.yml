@@ -1,0 +1,16 @@
+---
+galaxy_info:
+  author: James Pic
+  description: A simple role to set the march fact depending on the host CPU.
+  license:  BSD
+  min_ansible_version: 1.2
+
+  platforms:
+  - name: GenericLinux
+    versions:
+    - all
+    - any
+  
+  categories:
+  - packaging
+  - system

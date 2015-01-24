@@ -1,0 +1,14 @@
+---
+
+- hosts: all
+  pre_tasks:
+
+  roles:
+  - .
+
+  tasks:
+  - debug: var=march
+
+#  tasks:
+#  - include_vars: defaults/main.yml
+#  - include: tasks/main.yml

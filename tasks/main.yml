@@ -1,0 +1,7 @@
+---
+
+- shell: gcc -c -Q -march=native --help=target | grep march | grep -o '\w*$'
+  register: gcc
+  changed_when: False
+
+- set_fact: march={{ gcc.stdout }}
